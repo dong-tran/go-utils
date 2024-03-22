@@ -34,7 +34,7 @@ func NewRateLimiter(limit, initialWindow time.Duration, resetThreshold, maxWaiti
 	}
 }
 
-func (r *RateLimiter) Execute(task CallerFunction, param interface{}) ReturnResult {
+func (r *RateLimiter) Execute(task CallerFunction, param CallerParam) ReturnResult {
 	r.mutex.Lock()
 	defer r.mutex.Unlock()
 

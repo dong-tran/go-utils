@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	ratelimiter "github.com/dong-tran/go-utils/rate-limiter"
+	ratelimiter "github.com/dong-tran/go-utils/ratelimiter"
 )
 
 func main() {
